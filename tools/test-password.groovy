@@ -1,4 +1,7 @@
 pipeline {
+    agent {
+        label ''
+    }
     environment {
         IBMCLOUD_ENVIRONMENT = "prod"
         REGION = "us-south"

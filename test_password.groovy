@@ -14,10 +14,7 @@ pipelineJob("$basePath/test password") {
         }
     }
     parameters {
-        passwordParameterDefinition{
-            name("my-pass")
-            description("my-pass description")
-        }
+        nonStoredPasswordParam('myParameterName', 'my description')
         // stringParam('IMAGE_BUILD_TAG', '', 'ImageName:CommitID')
         // stringParam('IMAGE_RELEASE_TAG', '', 'repourl/ImageName:CommitID')
         // stringParam('DEPLOYMENT', 'prod_au-syd', '')
